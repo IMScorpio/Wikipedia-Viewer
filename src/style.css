@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  background-color: #102b49;
+}
+p {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #3f3f3f;
+}
+h1 {
+  letter-spacing: 0.4rem;
+}
+h4,
+h3 {
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+a,
+a:hover,
+a:visited,
+a:focus {
+  color: #515151;
+  text-decoration: none;
+}
+input[type="search"],
+input[type="search"]:focus {
+  box-shadow: none;
+  width: 900px;
+  text-align: left;
+}
+.container {
+  margin-top: 20vh;
+  max-width: 2000px;
+}
+.row {
+  margin-top: 40px;
+}
+.logo {
+  margin-top: 10;
+}
+.rand-btn {
+  background-color: #fff;
+  padding: 10px 15px 10px 15px;
+  font-family: "Raleway", sans-serif;
+  font-family: 500;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+.rand-btn:hover {
+  background-color: #59b0e2;
+  color: #ffffff;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.search-txt {
+  max-width: 100%;
+  color: #515151;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 15px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-bottom: #59b0e2;
+  outline: none;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .search-txt {
+    font-size: 1.5rem;
+  }
+}
+
+::placeholder {
+  color: #878787;
+}
+
+.preloader {
+  margin-top: 40px;
+  color: #d78eff;
+  font-size: 48px;
+}
+.err-message {
+  margin-top: 40px;
+  color: #d78eff;
+  font-size: 18px;
+}
+.get-string {
+  font-size: 2rem;
+  font-family: serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.result-txt {
+  margin: 8px 0;
+  padding: 5px 15px;
+  background-color: #ffffff;
+  border-left: 3px solid #d78eff;
+  box-sizing: border-box;
+}
+
+.result-txt {
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 0px rgba(0, 0, 0, 0.1) inset;
+}
+.result-txt:before,
+.result-txt:after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+}
+.result-txt:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg);
+}
